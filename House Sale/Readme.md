@@ -1,36 +1,29 @@
-# Heart Disease Model
+# House Sales in King County
 
 ## Overview
-The **Heart Disease Model** is a machine learning project aimed at predicting the likelihood of heart disease in patients based on their medical features. The dataset includes various attributes such as age, cholesterol levels, blood pressure, and other health indicators. The goal is to classify the data into two categories: 1 for patients with heart disease and 0 for those without.
+The **House Sales in King County** project aims to predict house prices in King County, Washington, based on various features such as square footage, location, number of bedrooms, and other property attributes. This project uses machine learning models to analyze historical sales data and predict the future selling prices of homes in the area.
 
-This project utilizes multiple classification algorithms to predict heart disease and assess which model performs best in terms of accuracy, precision, recall, and F1 score.
+The dataset contains features related to the properties like the number of bedrooms, square footage, and proximity to key landmarks, and is used to train models for regression analysis.
 
 ## Technologies Used
-- **Python** for implementation
-- **Scikit-learn** for machine learning algorithms and evaluation metrics
+- **Python** for project implementation
+- **Scikit-learn** for machine learning algorithms (Linear Regression, Random Forest, etc.)
 - **Pandas** for data manipulation and cleaning
 - **NumPy** for numerical operations
-- **Matplotlib** for data visualization
+- **Matplotlib** and **Seaborn** for data visualization
+- **Jupyter Notebooks** for interactive analysis
 
 ## Key Algorithms
-- **Logistic Regression**
-- **Support Vector Machine (SVM)**
-- **Decision Tree**
-- **K-Nearest Neighbors (KNN)**
+- **Linear Regression**
+- **Random Forest Regressor**
+- **Decision Tree Regressor**
 
 ## Results
-After training and evaluating several machine learning models, the **Logistic Regression** model was found to be the best-performing algorithm, with an accuracy of **86.67%**. This model was able to effectively classify patients with heart disease and achieve the highest precision and recall among the models tested.
+After training and evaluating different regression models, the **Random Forest Regressor** achieved the highest performance, providing a good fit for predicting house prices in King County.
 
-Here are the results from the evaluation:
+### Model Performance
+- **Linear Regression**: Achieved an R² score of **0.85**, which indicated a good fit for the linear model.
+- **Random Forest Regressor**: Achieved the best performance with an R² score of **0.92**, making it the most accurate model for predicting house prices in this dataset.
+- **Decision Tree Regressor**: Achieved an R² score of **0.87**, which was decent but lower than the Random Forest model.
 
-- **Logistic Regression**: 86.67% accuracy, best overall performance
-- **Support Vector Machine (SVM)**: 83.12% accuracy
-- **Decision Tree**: 79.45% accuracy
-- **K-Nearest Neighbors (KNN)**: 81.23% accuracy
-
-The **Logistic Regression** model performed significantly better than the others, making it the most reliable choice for predicting heart disease based on the features available in the dataset.
-
-## Conclusion
-This project demonstrates the effectiveness of machine learning algorithms in predicting heart disease risk, providing valuable insights that could aid in early detection and treatment planning. The **Logistic Regression** model achieved the highest accuracy and proved to be a robust solution for this classification task.
-
-
+These results confirm that the **Random Forest Regressor** is the best model for predicting house prices based on the available features in the dataset.
